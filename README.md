@@ -18,7 +18,7 @@ Get-FileHash '.\DebugXmlTool-1.0.0.msi' -Algorithm SHA256
 
 | Version | Fichier | Octets | SHA-256 |
 |---|---|---:|---|
-| 1.0.0 | `DebugXmlTool-1.0.0.msi` | 125 198 888 | `948b6d082afc475e4e66b2098733a7646d6cdfa8a81e2ca763b02299ba39c28a` |
+| 1.0.0 | `DebugXmlTool-1.0.0.msi` | 125 202 988 | `66909ed258dcc87c81ad2039195bbf00422049f052c0d04e5569266ae524d0c7` |
 
 ## Ce que ce miroir est, et ce qu'il n'est pas
 
