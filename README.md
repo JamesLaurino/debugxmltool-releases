@@ -9,8 +9,9 @@ Debug XML Tool téléchargeables depuis un hébergeur tiers, indépendamment du 
 
 ## Vérifier ce que vous avez téléchargé
 
-Chaque version publie son empreinte SHA-256, **identique à celle affichée sur le site**. Un fichier
-dont l'empreinte diffère n'est pas celui qui a été publié — quelle que soit sa provenance.
+Chaque version publiée ici porte son empreinte SHA-256, **identique à celle que le site affiche pour
+la version courante**. Un fichier dont l'empreinte diffère n'est pas celui qui a été publié — quelle
+que soit sa provenance.
 
 ```powershell
 Get-FileHash '.\DebugXmlTool-1.0.1.msi' -Algorithm SHA256
@@ -24,11 +25,18 @@ sha256sum ./debugxmltool_1.0.1-1_amd64.deb
 |---|---|---:|---|
 | 1.0.1 | `DebugXmlTool-1.0.1.msi` | 126 117 420 | `94071d667cd47fbca4ac38dc385bb4abad7211b84ad8ecfe2e421a3bc1fe9694` |
 | 1.0.1 | `debugxmltool_1.0.1-1_amd64.deb` | 119 572 166 | `82b84549e8b9c6e31cd220ac6aa9d6a4999e3af4c01f6800b460310146d82d19` |
-| 1.0.0 | `DebugXmlTool-1.0.0.msi` | 125 202 988 | `66909ed258dcc87c81ad2039195bbf00422049f052c0d04e5569266ae524d0c7` |
+| 1.0.0 *(retirée)* | `DebugXmlTool-1.0.0.msi` | 125 202 988 | `66909ed258dcc87c81ad2039195bbf00422049f052c0d04e5569266ae524d0c7` |
 
-⚠️ **La version servie sur le site est la 1.0.1.** La 1.0.0 reste téléchargeable ici parce qu'un
-fichier publié une fois ne se retire pas sans raison — mais c'est la 1.0.1 qu'il faut installer, et
-elle **remplace** la 1.0.0 au lieu de s'installer à côté.
+⚠️ **La 1.0.0 a été retirée du téléchargement le 2026-09-27**, ici et sur le site. Son empreinte
+reste écrite ci-dessus, et c'est désormais la **seule trace publique** qui en subsiste : elle vaut
+toujours pour qui l'avait notée en septembre.
+
+🔴 **La raison du retrait.** La 1.0.0 était construite **sans obfuscation**. La servir à côté d'une
+1.0.1 obfusquée revenait à publier en clair le code que la 1.0.1 protège — il suffisait de
+télécharger l'ancienne pour lire la nouvelle. Le retrait n'enlève rien à personne : la **1.0.1 est
+gratuite pour tout détenteur d'une licence 1.0.0**, elle **remplace** l'installation existante au
+lieu de s'ajouter à côté, et c'est elle qu'il faut installer. Si vous avez malgré tout besoin du
+binaire d'origine, écrivez à <contact@open-studio.tech> : rien n'a été détruit.
 
 ## Ce que ce miroir est, et ce qu'il n'est pas
 
@@ -56,8 +64,9 @@ downloadable from a third-party host, independently of the website's own server.
 
 ## Verify what you downloaded
 
-Every release publishes its SHA-256 checksum, **identical to the one shown on the site**. A file
-whose checksum differs is not the published file, wherever it came from.
+Every release published here carries its SHA-256 checksum, **identical to the one the site shows for
+the current version**. A file whose checksum differs is not the published file, wherever it came
+from.
 
 ```powershell
 Get-FileHash '.\DebugXmlTool-1.0.1.msi' -Algorithm SHA256
@@ -73,9 +82,16 @@ sha256sum ./debugxmltool_1.0.1-1_amd64.deb
 | 1.0.1 | `debugxmltool_1.0.1-1_amd64.deb` | 119 572 166 | `82b84549e8b9c6e31cd220ac6aa9d6a4999e3af4c01f6800b460310146d82d19` |
 | 1.0.0 | `DebugXmlTool-1.0.0.msi` | 125 202 988 | `66909ed258dcc87c81ad2039195bbf00422049f052c0d04e5569266ae524d0c7` |
 
-⚠️ **The version served on the site is 1.0.1.** 1.0.0 stays downloadable here because a file
-published once is not withdrawn without a reason — but 1.0.1 is the one to install, and it
-**replaces** 1.0.0 rather than installing alongside it.
+⚠️ **1.0.0 was withdrawn from download on 2026-09-27**, here and on the site. Its checksum stays in
+the table above, and that is now the **only public record** of it: it still holds for anyone who
+noted it back in September.
+
+🔴 **Why it was withdrawn.** 1.0.0 was built **without obfuscation**. Serving it alongside an
+obfuscated 1.0.1 amounted to publishing in clear the very code 1.0.1 protects — downloading the old
+build was enough to read the new one. Nobody loses anything: **1.0.1 is free to every 1.0.0 licence
+holder**, it **replaces** an existing installation rather than sitting beside it, and it is the one
+to install. If you still need the original binary, write to <contact@open-studio.tech>: nothing was
+destroyed.
 
 ## What this mirror is, and is not
 
